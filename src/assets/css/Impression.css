@@ -1,0 +1,28 @@
+.impression-cont {
+  animation: slideInFromLeft 1s;
+}
+.impression-img {
+  animation: slideInFromRight 1s;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    filter: blur(5px);
+  }
+  to {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateY(-100%);
+    filter: blur(5px);
+  }
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}

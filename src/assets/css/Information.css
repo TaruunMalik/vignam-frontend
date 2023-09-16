@@ -1,0 +1,22 @@
+/* Define the initial state of the element */
+.info-cont {
+  filter: blur(5px);
+}
+
+.animate-blur-to-clear {
+  animation: blurToClear 2s ease forwards;
+}
+
+/* Define the keyframes for the animation */
+@keyframes blurToClear {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+    filter: blur(5px); /* Start with a blur of 5px */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px); /* End with no blur (clear) */
+  }
+}
